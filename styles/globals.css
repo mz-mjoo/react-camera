@@ -1,0 +1,155 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  line-height: 1;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', sans-serif;
+  text-size-adjust: 100%;
+}
+
+button {
+  background: none;
+  border: 0;
+  font-family: Lato, 'Noto Sans KR', -apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', sans-serif;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+input,
+select {
+  border: 0;
+  border-radius: 0;
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', sans-serif;
+}
+
+input {
+  appearance: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  width: 100%;
+}
+
+input::-ms-clear {
+  /* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+  display: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  /* input type number 에서 화살표 제거 */
+  appearance: none;
+}
+
+select {
+  appearance: none;
+}
+
+select::-ms-expand {
+  /* IE 에서 Select box 화살표 제거 */
+  display: none;
+}
+
+textarea {
+  font-family: inherit;
+  resize: none;
+  border: none;
+}
+
+textarea:focus {
+  outline: none;
+  outline-offset: unset;
+}
+
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+/* WebKit browsers */
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+html {
+  text-size-adjust: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+ul,
+ol,
+button,
+figure,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Faded Dialog Template CSS */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: all 500ms linear;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: all 500ms linear;
+}
+
+/* Faded right Dialog Template CSS */
+.fade-left-enter {
+  transform: translateX(100px);
+  opacity: 0;
+}
+.fade-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 500ms;
+}
+
+.fade-left-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+.fade-left-exit-active {
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 500ms;
+}

@@ -1,0 +1,4 @@
+{
+  "plugins": ["@emotion"],
+  "extends": ["next", "next/core-web-vitals"]
+}
