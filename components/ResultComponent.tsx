@@ -26,6 +26,7 @@ const ResultComponent = () => {
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const ctx = canvasRef.current?.getContext('2d');
+  const stageRef = useRef(null);
 
   //   useEffect(() => {
   //     console.log('useEffect ctx', ctx);
@@ -57,7 +58,7 @@ const ResultComponent = () => {
     <Container>
       <div>
         <div style={{border: '1px solid blue'}}>
-          <Stage width={500} height={600} x={0} y={0}>
+          <Stage width={500} height={600} x={0} y={0} ref={stageRef}>
             <Layer
               clipFunc={(ctx) => {
                 ctx.ellipse(
@@ -84,6 +85,13 @@ const ResultComponent = () => {
             </Layer>
           </Stage>
         </div>
+        <Button
+          onClick={() => {
+            console.log('ctx', stageRef.current.toDataURL());
+          }}
+        >
+          save
+        </Button>
 
         {/* <canvas ref={canvasRef} width={500} height={600}></canvas> */}
       </div>
