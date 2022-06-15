@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import React from 'react';
 
 export const ResultComponent = dynamic(
-  () => import('../../components/ResultComponent'),
+  () => import('../../components/test/ResultComponent'),
   {
     ssr: false,
   },

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import {useCallback, useRef, useState} from 'react';
-import ImageCropComponent from '@/components/ImageCropComponent';
+import ImageCropComponent from '@/components/test/ImageCropComponent';
 
 const Cotainer = styled.div`
   width: 750px;
@@ -35,8 +35,6 @@ const CameraDetail = () => {
     <Cotainer>
       <div>
         <h1>사진 촬영</h1>
-        {/* <Label htmlFor="take-picture">사진 촬영</Label> */}
-        {/* <input id="take-picture" type="file" accept="image/*;capture=camera" /> */}
         <input
           id="take-picture"
           type="file"

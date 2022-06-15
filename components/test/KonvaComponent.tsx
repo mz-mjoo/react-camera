@@ -50,6 +50,7 @@ const KonvaComponent = () => {
             image={image}
             draggable
             style={{borderRadius: 30}}
+            alt=""
           />
         </Layer>
       </Stage>
