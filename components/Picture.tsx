@@ -8,7 +8,7 @@ const Container = styled.div`
 `;
 
 const url = 'img/money.png';
-const image = 'img/photo1.png';
+const image = 'img/donggle.png';
 const Picture = () => {
   const [imageSrc] = useImage(url);
   const [imageSrc2] = useImage(image);
@@ -17,22 +17,17 @@ const Picture = () => {
   return (
     <Container>
       <Stage width={1160} height={560}>
-        <Layer
-          clipFunc={(ctx) => {
-            console.log('ctx', ctx);
-          }}
-        >
+        <Layer>
           <Image
-            image={imageSrc}
-            opacity={0.5}
-            width={1160}
-            height={560}
+            image={imageSrc2}
             alt=""
-            fillPatternImage={imageSrc2}
-            fillPatternRepeat={'no-repeat'}
-            fillPatternOffset={{x: -(1160 / 2) + 250, y: 0}}
-            fillPatternScale={{x: 0.7, y: 0.7}}
+            x={1160 / 2 - 352 / 2}
+            y={560 / 2 - 420 / 2}
+            width={352}
+            height={420}
           />
+          {/* <Text /> */}
+          <Image image={imageSrc} width={1160} height={560} alt="" />
         </Layer>
       </Stage>
     </Container>
