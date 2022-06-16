@@ -26,6 +26,7 @@ interface ImageCropProps {
 const Container = styled.div`
   border: 1px solid red;
 `;
+
 const Button = styled.button`
   font-size: 50px;
 `;
